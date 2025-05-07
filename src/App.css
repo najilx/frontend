@@ -1,0 +1,203 @@
+/* reset a bit of browser default */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* wrapper for each page */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+/* simple card */
+.card {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* headings */
+h1, h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* forms */
+form .form-group {
+  margin-bottom: 1rem;
+}
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+/* buttons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #6c63ff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+  background: #5848c2;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+/* tables */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.table th {
+  background: #f7f7f7;
+  text-align: left;
+  font-weight: 600;
+}
+.table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* pagination */
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.pagination li button {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #ccd0d5;
+  background: white;
+}
+.pagination li button.active {
+  background: #6c63ff;
+  color: white;
+  border-color: #6c63ff;
+}
+
+/* search bar */
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, #0000 18.75%, #2772ed 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #2772ed -6.25% 6.25%, #7ba9f4 0 18.75%);
+  background-size: 64px 64px;
+}
+
+/* Two-column form layout */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+/* Auth card styling */
+.auth-card {
+  background: #fff;
+  border-radius: 12px;
+  .auth-card {
+    background: #fff;
+    border-radius: 12px;
+    -webkit-box-shadow: inset 3px 3px 10px 3px #a6c5f7;
+    -moz-box-shadow: inset 3px 3px 10px 3px #a6c5f7;
+    box-shadow: inset 3px 3px 10px 3px #a6c5f7;
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem;
+  }
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+}
+
+/* Center login/register link */
+.auth-card .switch-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive form rows */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+.contacts-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+}
